@@ -1,0 +1,5 @@
+[
+  "assets/bower/jquery/dist/jquery.js",
+  "assets/bower/angular/angular.js",
+  "assets/bower/angular-route/angular-route.js"
+]

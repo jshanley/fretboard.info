@@ -1,1 +1,1 @@
-angular.module('fretboard', []);
+angular.module('fretboard', ['ngRoute']);
