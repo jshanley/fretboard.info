@@ -3,6 +3,7 @@ var gulp            = require('gulp'),
     sass            = require('gulp-sass'),
     rename          = require('gulp-rename'),
     filter          = require('gulp-filter'),
+    uglify          = require('gulp-uglify'),
     neat            = require('node-neat');
 
 var script_dependencies = require('./src/script_dependencies.json')
@@ -10,6 +11,7 @@ var script_dependencies = require('./src/script_dependencies.json')
 gulp.task('js', function() {
   var stream = gulp.src(script_dependencies.concat(['src/angular/**/module.js', 'src/angular/**/*.js']))
     .pipe(concat('application.js'))
+    //.pipe(uglify())
     .pipe(gulp.dest('assets'));
   return stream;
 });

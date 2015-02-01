@@ -1,10 +1,12 @@
-Options +SymLinksIfOwnerMatch
+# KEEP THIS AROUND FOR REFERENCE LATER
 
-<ifModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_URI} !index
-  RewriteCond %{REQUEST_URI} !.*\.(css|js|html|png)
-  RewriteRule (.*) index.html [L]
-</ifModule>
+# Options +SymLinksIfOwnerMatch
+#
+# <ifModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{REQUEST_FILENAME} !-f
+#   RewriteCond %{REQUEST_FILENAME} !-d
+#   RewriteCond %{REQUEST_URI} !index
+#   RewriteCond %{REQUEST_URI} !.*\.(css|js|html|png)
+#   RewriteRule (.*) index.html [L]
+# </ifModule>

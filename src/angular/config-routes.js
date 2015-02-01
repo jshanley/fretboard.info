@@ -5,8 +5,8 @@ angular.module('fretboard')
       .when('/', {
         templateUrl: 'views/home.html'
       })
-      .when('/test', {
-        templateUrl: 'views/test.html'
+      .when('/practice', {
+        templateUrl: 'views/practice.html'
       })
       .otherwise({
         redirectTo: '/'
